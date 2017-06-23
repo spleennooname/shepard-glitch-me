@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SHEPARD GLITCH ME - a WebVR/WebGL experiment for DDD2017 - spleen666@gmail.com</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, maximum-scale=1">
+      <script src="shepardglitchme.bundle.js"></script>
+  </head>
+  <body>
+    <a-scene vr-mode-ui="enabled: false" effects="bloom, film, colors" bloom="strength: 0.10; radius: 0.10; threshold: 0.5" colors="mode: g" film="nIntensity: 10.75; sIntensity: 0.45">
+        <!-- ASSETS -->
+      <a-assets>
+        <video id="cam" src="mp4/justify_my_love.mp4" width="640" height="480" muted crossorigin autoplay loop webkit-playinsline playsinline></video>
+        <audio id="shepard" src="mp3/descent_shepard.mp3" crossorigin autoplay loop></audio>
+      </a-assets>
+      <!-- /ASSETS -->
+       <a-sky color="#ffffff"></a-sky>
+       <!-- video -->
+        <a-video material="src: #cam; shader: webcam-shader;" geometry="primitive: curved-plane; width: 6; height: 4.5; segmentsHeight: 16; segmentsWidth: 16" render-shader look-at="#camera" width="6" height="4.5"></a-video>
+        <!-- /video -->
+        <!-- CAMERA + CURSOR -->
+        <a-entity id="camera" camera="userHeight: 1.75; fov: 73; zoom:1" look-controls="enabled: true" wasd-controls="enabled: true" position="0.0 0.0 6.0" rotation="-30.0 0.0 -5.0">
+         <a-entity id="cursor"
+           cursor="fuse: true; fuseTimeout: 1000"
+           position="0.0 0.0 -2.0"
+           rotation="0.0 0.0 0.0"
+           fuse-ring
+           geometry="primitive: ring; radiusInner: 0.075; radiusOuter: 0.09"
+           material="shader: flat; color: #000; opacity: 0.85"
+           animation__1="property: scale; startEvents: click; from: 1.0 1.0 1.0; to: 0.5 0.5 0.5; dir: normal; dur: 1000; easing: easeInQuint"
+           animation__2="property: scale; startEvents: mouseleave; from: 0.5 0.5 0.5; to: 1.0 1.0 1.0; dir: normal; dur: 1000; easing: easeOutQuint"
+           event-set__1="_event: mouseenter; opacity: 0.75"
+           event-set__2="_event: mouseleave; opacity: 1.0"></a-entity>
+       </a-entity>
+       <!-- /CAMERA + CURSOR -->
+    </a-scene>
+
+    <div class="by">
+        <h2>SHEPARD GLITCH ME</h2>
+        <p>b/w chewing on <a href="https://en.wikipedia.org/wiki/Shepard_tone" target="_blank">Shepard's descending tones</a><br/></p>
+        <p>techs: WebVR, WebGL, GLSL</p>
+        <p><br/>drag, look, listen.</p>
+    </div>
+    
+  </body>
+</html>

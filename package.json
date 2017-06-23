@@ -1,0 +1,38 @@
+{
+  "name": "shepard-glitch-me",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Andrea Bovo - <spleen666@gmail.com>",
+  "description": "a reactive audio chewing about risk, fall & Shepard's tones.",
+  "scripts": {
+    "build": "webpack -p --config webpack.config.js --display-reasons --display-modules",
+    "live": "webpack-dev-server --https --colors --hot --inline --config webpack.config.js --content-base build --watch-content-base"
+  },
+  "homepage": "https://github.com/spleennooname/shepard-glitch-me",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spleennooname/shepard-glitch-me.git"
+  },
+  "keywords": [
+    "webgl",
+    "clubber",
+    "glsl",
+    "shepard",
+    "webaudio",
+    "aframe",
+    "aframe-component",
+    "aframe-vr",
+    "vr",
+    "mozvr",
+    "webvr"
+  ],
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "eslint": "^3.19.0",
+    "eslint-loader": "^1.7.1",
+    "shader-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.4"
+  }
+}
