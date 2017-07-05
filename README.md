@@ -7,9 +7,10 @@
 
 > A [WebVR](https://en.wikipedia.org/wiki/WebVR)/[WebGL](https://en.wikipedia.org/wiki/WebGL) experiment. A reactive audio chewing about risk, fall & Shepard's tones.
 
-# UPDATED DEMO (WITH SOURCE CODE) AT GLITCH.ME
+# UPDATE: PROJECT MOVED TO GLITCH.ME
 
-[webcam version](https://shepard.glitch.me)
+- [webcam version](https://shepard.glitch.me)
+- [remix project code](https://glitch.com/edit/#!/shepard)
 
 ## demos
 
