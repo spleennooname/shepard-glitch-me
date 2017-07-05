@@ -3,6 +3,8 @@
   <a href="https://aframe.io/"><img src="https://img.shields.io/badge/vr%20framework-a--frame-lightgrey.svg?style=flat-square"></a>
 </p>
 
+![shepard glitch me](https://cdn.glitch.com/6f125520-1cfa-4b57-84d9-4d8a7cc54873%2FSchermata%202017-07-06%20alle%2000.08.47.png?1499292562482)
+
 # shepard glitch me
 
 > A [WebVR](https://en.wikipedia.org/wiki/WebVR)/[WebGL](https://en.wikipedia.org/wiki/WebGL) experiment. A reactive audio chewing about risk, fall & Shepard's tones.
